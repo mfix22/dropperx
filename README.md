@@ -1,5 +1,5 @@
-# `<Dropperx/>`
-Wrap any function-as-child component to turn it into a [React Drag-n-Drop](https://www.npmjs.com/package/react-dnd) file-reader.
+# `<Dropperx/>` 📁✊
+Wrap any function-as-child component to turn it into a [React Drag-n-Drop](https://www.npmjs.com/package/react-dnd) target that reads the contents of files.
 
 #### Usage:
 ```javascript
@@ -43,3 +43,8 @@ The function you pass into `Dropperx` is called with a single object containing 
 
 ## License
 MIT
+
+## Sponsor
+<a target='_blank' rel='nofollow' href='https://app.codesponsor.io/link/4phDnnWx26cvd5VwNvzwwdPm/mfix22/dropperx'>
+  <img alt='Sponsor' width='888' height='68' src='https://app.codesponsor.io/embed/4phDnnWx26cvd5VwNvzwwdPm/mfix22/dropperx.svg' />
+</a>
