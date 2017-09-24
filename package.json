@@ -1,0 +1,33 @@
+{
+  "name": "dropperx",
+  "version": "0.0.1",
+  "description": "File drop target for React DND",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "dnd",
+    "drag",
+    "drop",
+    "React",
+    "files",
+    "dropper",
+    "jsx"
+  ],
+  "author": "mfix22",
+  "license": "MIT",
+  "dependencies": {
+    "react": ">=15",
+    "react-dnd": ">=2",
+    "react-dnd-html5-backend": ">=2.4"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mfix22/dropperx.git"
+  },
+  "bugs": {
+    "url": "https://github.com/mfix22/dropperx/issues"
+  },
+  "homepage": "https://github.com/mfix22/dropperx#readme"
+}
