@@ -15,7 +15,7 @@
     "dropper",
     "jsx"
   ],
-  "author": "mfix22",
+  "author": "mfix22 <mrfix84@gmail.com> (http://mfix22.github.io/)",
   "license": "MIT",
   "dependencies": {
     "react": ">=15",
