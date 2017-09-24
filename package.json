@@ -1,10 +1,11 @@
 {
   "name": "dropperx",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "File drop target for React DND",
-  "main": "index.js",
+  "main": "dist/dropperx.cjs.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "rollup src/index.js --output.format cjs --output.file dist/dropperx.cjs.js"
   },
   "keywords": [
     "dnd",
@@ -29,5 +30,8 @@
   "bugs": {
     "url": "https://github.com/mfix22/dropperx/issues"
   },
-  "homepage": "https://github.com/mfix22/dropperx#readme"
+  "homepage": "https://github.com/mfix22/dropperx#readme",
+  "devDependencies": {
+    "rollup": "^0.50.0"
+  }
 }
