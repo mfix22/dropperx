@@ -1,6 +1,6 @@
-import { createElement, Component } from 'react'
-import { DropTarget } from 'react-dnd'
-import { NativeTypes } from 'react-dnd-html5-backend'
+const { createElement, Component } = require('react')
+const { DropTarget } = require('react-dnd')
+const { NativeTypes } = require('react-dnd-html5-backend')
 
 const spec = {
   drop(props, monitor, component) {
@@ -59,4 +59,4 @@ class Dropperx extends Component {
   }
 }
 
-export default DropTarget(NativeTypes.FILE, spec, collect)(Dropperx)
+module.export = exports.default = DropTarget(NativeTypes.FILE, spec, collect)(Dropperx)
