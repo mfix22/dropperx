@@ -1,5 +1,5 @@
-# `<Dropperx/>` 📁✊
-Wrap any function-as-child component to turn it into a [React Drag-n-Drop](https://www.npmjs.com/package/react-dnd) target that reads the contents of files.
+# `<DroppeRx/>` 📁✊
+Wrap any function-as-child component to turn it into a [React Drag-n-Drop](https://www.npmjs.com/package/react-dnd) target that reads the contents of files. A _prescribed_  method for reading files in the browser.
 
 #### Usage:
 ```javascript
@@ -34,7 +34,7 @@ import Dropperx from 'dropperx'
 - `filter`: Function passed to `files.filter(filter)`. Lets you control which files are read.
 
 ## Child Callback Function
-The function you pass into `Dropperx` is called with a single object containing these keys: 
+The function you pass into `Dropperx` is called with a single object containing these keys:
 - `isOver`: Boolean that says whether cursor is over the target
 - `canOver`: Boolean that states if able to drop on the window. This is true if the cursor is holding files
 - `files`: Array of files that were last dropped. `null` if nothing has been dropped.
