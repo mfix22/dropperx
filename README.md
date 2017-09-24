@@ -1,5 +1,5 @@
-# `<Dropperx/>`
-Wrap any function-as-child component to turn it into a [React Drag-n-Drop](https://www.npmjs.com/package/react-dnd) file-reader.
+# `<Dropperx/>` 📁✊
+Wrap any function-as-child component to turn it into a [React Drag-n-Drop](https://www.npmjs.com/package/react-dnd) target that reads the contents of files.
 
 #### Usage:
 ```javascript
