@@ -2,6 +2,8 @@ import { createElement, Component } from 'react'
 import { DropTarget } from 'react-dnd'
 import { NativeTypes } from 'react-dnd-html5-backend'
 
+import { DATA_URL, TEXT } from './constants'
+
 const spec = {
   drop(props, monitor, component) {
     const { files } = monitor.getItem()
@@ -14,7 +16,16 @@ const spec = {
             file.content = event.target.result
             resolve(file)
           }
-          reader.readAsText(file, 'UTF-8')
+
+          const readAs = typeof props.readAs === 'function'
+            ? props.readAs(file)
+            : props.readAs
+
+          if (readAs === DATA_URL) {
+            reader.readAsDataURL(file)
+          } else {
+            reader.readAsText(file, 'UTF-8')
+          }
         }))
     ).then(files => {
       component.setState(state => ({
@@ -57,6 +68,12 @@ class Dropperx extends Component {
       )
     )
   }
+}
+
+Dropperx.defaultProps = {
+  filter: i => i,
+  onDrop: () => {},
+  readAs: 'TEXT'
 }
 
 export default DropTarget(NativeTypes.FILE, spec, collect)(Dropperx)
