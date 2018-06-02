@@ -19,7 +19,7 @@
   "author": "mfix22 <mrfix84@gmail.com> (http://mfix22.github.io/)",
   "license": "MIT",
   "dependencies": {
-    "react": ">=15",
+    "react": ">=15 <16.4.0",
     "react-dnd": ">=2",
     "react-dnd-html5-backend": ">=2.4"
   },
