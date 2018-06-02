@@ -1,6 +1,6 @@
 {
   "name": "dropperx",
-  "version": "0.1.2",
+  "version": "0.2.0-beta",
   "description": "File drop target for React DND",
   "main": "dist/dropperx.cjs.js",
   "scripts": {
@@ -19,9 +19,9 @@
   "author": "mfix22 <mrfix84@gmail.com> (http://mfix22.github.io/)",
   "license": "MIT",
   "dependencies": {
-    "react": ">=15 <16.4.0",
-    "react-dnd": ">=2 <3",
-    "react-dnd-html5-backend": ">=2.4 <3"
+    "react": "16.3.*",
+    "react-dnd": "^4.0.2",
+    "react-dnd-html5-backend": "^4.0.2"
   },
   "repository": {
     "type": "git",
@@ -32,6 +32,6 @@
   },
   "homepage": "https://github.com/mfix22/dropperx#readme",
   "devDependencies": {
-    "rollup": "^0.50.0"
+    "rollup": "^0.59.4"
   }
 }

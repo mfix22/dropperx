@@ -57,7 +57,7 @@ class Dropperx extends Component {
     return this.props.connectDropTarget(
       createElement(
         'div',
-        null,
+        {},
         this.props.children({
           __monitor__: this.props.monitor,
           isOver: this.props.isOver,
