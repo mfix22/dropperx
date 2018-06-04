@@ -36,7 +36,7 @@ import Dropperx from 'dropperx'
 ## Child Callback Function
 The function you pass into `Dropperx` is called with a single object containing these keys:
 - `isOver`: Boolean that says whether cursor is over the target
-- `canOver`: Boolean that states if able to drop on the window. This is true if the cursor is holding files
+- `canDrop`: Boolean that states if able to drop on the window. This is true if the cursor is holding files
 - `files`: Array of files that were last dropped. `null` if nothing has been dropped.
 - `history`: Array of past dropped contents. `history[0]` contains the array of files last dropped.
 - `__monitor__`: Escape hatch to access the React-DnD monitor object
