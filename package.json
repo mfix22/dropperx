@@ -1,6 +1,6 @@
 {
   "name": "dropperx",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "File drop target for React DND",
   "main": "dist/dropperx.cjs.js",
   "scripts": {
@@ -20,8 +20,8 @@
   "license": "MIT",
   "dependencies": {
     "react": "16.3.*",
-    "react-dnd": "^4.0.2",
-    "react-dnd-html5-backend": "^4.0.2"
+    "react-dnd": "^4.0.2 || ^5.0.0",
+    "react-dnd-html5-backend": "^4.0.2 || ^5.0.0"
   },
   "repository": {
     "type": "git",
