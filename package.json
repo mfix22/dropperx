@@ -1,6 +1,6 @@
 {
   "name": "dropperx",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "File drop target",
   "main": "dist/index.js",
   "umd:main": "dist/index.umd.js",
