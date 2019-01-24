@@ -2,10 +2,13 @@
   "name": "dropperx",
   "version": "0.2.1",
   "description": "File drop target for React DND",
-  "main": "dist/dropperx.cjs.js",
+  "main": "dist/index.js",
+  "umd:main": "dist/index.umd.js",
+  "module": "dist/index.mjs",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "rollup src/index.js --output.format cjs --output.file dist/dropperx.cjs.js"
+    "build": "microbundle",
+    "watch": "microbundle watch"
   },
   "keywords": [
     "dnd",
@@ -19,9 +22,14 @@
   "author": "mfix22 <mrfix84@gmail.com> (http://mfix22.github.io/)",
   "license": "MIT",
   "dependencies": {
-    "react": "16.3.*",
-    "react-dnd": "^4.0.2 || ^5.0.0",
-    "react-dnd-html5-backend": "^4.0.2 || ^5.0.0"
+    "react-dropzone": "^8.0.3"
+  },
+  "devDependencies": {
+    "react": "latest",
+    "microbundle": "^0.9.0"
+  },
+  "peerDependencies": {
+    "react": ">16.3"
   },
   "repository": {
     "type": "git",
@@ -30,8 +38,5 @@
   "bugs": {
     "url": "https://github.com/mfix22/dropperx/issues"
   },
-  "homepage": "https://github.com/mfix22/dropperx#readme",
-  "devDependencies": {
-    "rollup": "^0.59.4"
-  }
+  "homepage": "https://github.com/mfix22/dropperx#readme"
 }
