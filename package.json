@@ -1,7 +1,7 @@
 {
   "name": "dropperx",
-  "version": "0.2.1",
-  "description": "File drop target for React DND",
+  "version": "1.0.0",
+  "description": "File drop target",
   "main": "dist/index.js",
   "umd:main": "dist/index.umd.js",
   "module": "dist/index.mjs",
