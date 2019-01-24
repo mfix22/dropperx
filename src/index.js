@@ -1,7 +1,8 @@
 import React from 'react'
 import Dropzone from 'react-dropzone'
 
-import { DATA_URL, TEXT } from './constants'
+const DATA_URL = 'DATA_URL'
+const TEXT = 'TEXT'
 
 function readAs(file) {
   if (file.type === '') return DATA_URL
@@ -27,6 +28,8 @@ class Dropperx extends React.Component {
   }
 
   handleDrop = files => {
+    if (!files[0]) return
+
     const reader = new FileReader()
     Promise.all(
       files.filter(this.props.filter).map(
