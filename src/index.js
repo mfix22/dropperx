@@ -4,6 +4,8 @@ import Dropzone from 'react-dropzone'
 const DATA_URL = 'DATA_URL'
 const TEXT = 'TEXT'
 
+const style = { outline: 'none' }
+
 function readAs(file) {
   if (file.type === '') return DATA_URL
 
@@ -69,7 +71,7 @@ class Dropperx extends React.Component {
         {({ getRootProps, isDragActive, isDragAccept }) => {
           const rootProps = getRootProps()
           return (
-            <div {...rootProps}>
+            <div {...rootProps} style={style}>
               {this.props.children({
                 isOver: isDragActive,
                 canDrop: isDragAccept,
